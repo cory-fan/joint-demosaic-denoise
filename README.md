@@ -1,5 +1,7 @@
 # Efficient Joint Demosaicing and Denoising with Downsampled Isotropic Networks
 
+A very simple writeup of the key idea of this project.
+
 A key split in the field of Image Restoration is the existence of two broad macro-architectures: firstly, U-Net (such as Restormer), and second, what I am terming isotropic networks, but include the networks categorized as Residual-in-Residual (such as RCAN or NAFSSR). 
 
 U-Net likely does not need introduction, but isotropic networks here refers to networks that have a uniform resolution among its network body, and do not perform upsampling/downsampling except at the beginning/end of the network. ViT is a famous example of this type of network. In Image Restoration, isotropic networks seek to capture the highly-detailed nature of image restoration tasks and thus tend not to perform *any* downsampling, instead performing calculations only on the full spatial resolution of the input image. This acheives good performance on certain tasks, especially super-resolution.
