@@ -10,4 +10,4 @@ However, I argue that this is antithetical to many empirical observations about 
 
 I apply this observation to the task of Joint Demosaicing and Denoising (largely because experiments on denoising-only datasets have a tendency to be prohibitively expensive for my personal budget), specifically the Hard Demosaicing Dataset introduced here (https://arxiv.org/html/2504.07145v1). Preliminary experimentations on smaller networks currently indicate that I can acheive marginally SOTA results (+0.03 PSNR average) for unified joint demosaicing and denoising on the hardest ISO 3200 setting with 12.8x less MACs than the current SOTA, ESUM (same as the paper introducing the dataset). A preliminary experiment with scaling up (to only 3.2x faster than ESUM) acheives +0.28 PSNR increase. Further expeirments with scaling up and experiments on other datasets to follow.
 
-![Alt text](HDD Results.png?raw=true "Title")
+![Alt text](hddresults.png?raw=true "Title")
